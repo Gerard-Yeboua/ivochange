@@ -17,7 +17,7 @@
         }
         /* Ensuring the form sections are styled distinctly */
         .form-section {
-            padding: 15px;
+            padding: 25px;
             border: 1px solid #ddd;
             border-radius: 5px;
             border-color: gray;
@@ -39,31 +39,7 @@
 
     <!-- Contenu Principal -->
     <div class="content" id="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-bleu">
-            <div class="container">
-                <!--a class="navbar-brand" href="index.php">
-                    <img src="assets/Ivochange.jpg" alt="Logo" class="img-fluid">
-                </a-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav navbar-nav-center">
-                        <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.php">Actualité</a></li>
-                        <li class="nav-item"><a class="nav-link" href="reviews.php">Avis</a></li>
-                        <li class="nav-item"><a class="nav-link" href="rates.php">Taux</a></li>
-                        <li class="nav-item"><a class="nav-link" href="faq.php">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="signin.php">Sign up</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.php">Sign in</a></li> 
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php include('navbar.php'); ?>
         
         <!-- Contenu de la page d'accueil -->
         <div class="container mt-5">
@@ -79,7 +55,7 @@
                         
                         <div class="mb-3">
                             <label for="fromCurrency" class="form-label">De</label>
-                            <select class="form-select" id="fromCurrency" name="fromCurrency">
+                            <select class="form-select" id="fromCurrency" name="from_currency">
                                 <option value="USD">USD - Dollar américain</option>
                                 <option value="EUR">EUR - Euro</option>
                                 <option value="GBP">RIA - USD</option>
@@ -115,7 +91,7 @@
 
                         <div class="mb-3">
                             <label for="toCurrency" class="form-label">À</label>
-                            <select class="form-select" id="toCurrency" name="toCurrency">
+                            <select class="form-select" id="toCurrency" name="to_currency">
 
                                 <option value="USD">USD - Dollar américain</option>
                                 <option value="EUR">EUR - Euro</option>

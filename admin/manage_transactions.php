@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <?php include('navbar-admin.php');     ?>
+    <?php include('sidebar-admin.php');     ?>
 
-    <div class="container mt-5">
+    <div class="content" id="content">
         <h1>Gestion des Transactions</h1>
         <table class="table table-bordered">
             <thead>
@@ -34,7 +34,7 @@
 
                 $sql = "SELECT transactions.id, users.username, transactions.amount, transactions.from_currency, transactions.to_currency, transactions.status
                         FROM transactions
-                        JOIN users ON transactions.user_id = users.id";
+                        JOIN users ON transactions.user_id = users.user_id";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {

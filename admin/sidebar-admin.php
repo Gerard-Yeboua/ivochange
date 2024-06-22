@@ -90,17 +90,17 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="text-center mb-4">
-            <a href="index.php"><img src="assets/Ivochange-removebg.png" alt="Logo" class="img-fluid" width="100" height="50"></a>
+            <a href="index.php"><img src="../assets/Ivochange-removebg.png" alt="Logo" class="img-fluid" width="100" height="50"></a>
         </div>
-        <a href="index.php"><i class="bi bi-speedometer2"></i>&nbsp; Tableau de Bord</a>
-        <a href="transactions.php"><i class="bi bi-currency-exchange"></i>&nbsp; Transactions</a>
-        <a href="profile.php"><i class="bi bi-person-circle"></i>&nbsp; Profil</a>
+        <a href="admin_dashboard.php"><i class="bi bi-speedometer2"></i>&nbsp; Tableau de Bord</a>
+        <a href="../profile.php"><i class="bi bi-person-circle"></i>&nbsp; Profil</a>
         <a href="settings.php"><i class="bi bi-gear"></i>&nbsp; Paramètres</a>
-        <a href="user_messages.php"><i class="bi bi-chat-dots"></i>&nbsp; Support</a>
-        <a href="https://web.whatsapp.com/send?phone=+2250789297259"><i class="bi bi-whatsapp"></i> &nbsp; Whatsapp</a>
-        <a href="https://web.telegram.org/z"><i class="bi bi-telegram"></i> &nbsp; Telegram</a>
-        <a href="https://www.facebook.com/profile.php?id=100091864765736"><i class="bi bi-facebook"></i> &nbsp; Facebook</a>
-        <a href="logout.php"><i class="bi bi-box-arrow-right"></i>&nbsp; Déconnexion</a>
+        <a href="manage_transactions.php"><i class="bi bi-currency-exchange"></i>&nbsp; Transactions</a>
+        <a href="manage_rates.php"><i class="bi bi-chat-dots">Taux d'échange</i>&nbsp; </a>
+        <a href="manage_reviews.php"><i class="bi bi-whatsapp"></i> &nbsp; Avis</a>
+        <a href="manage_users.php"><i class="bi bi-telegram"></i> &nbsp; Utilisateurs</a>
+        <a href="admin_messages.php"><i class="bi bi-facebook"></i> &nbsp; Support</a>
+        <a href="../logout.php"><i class="bi bi-box-arrow-right"></i>&nbsp; Déconnexion</a>
     </div>
 
     

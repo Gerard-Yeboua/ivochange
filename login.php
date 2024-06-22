@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connexion échouée : " . $conn->connect_error);
     }
 
-    $stmt = $conn->prepare("SELECT id, password, role FROM users WHERE username = ?");
+    $stmt = $conn->prepare("SELECT user_id, password, role FROM users WHERE username = ?");
     $stmt->bind_param("s", $inputUsername);
     $stmt->execute();
     $stmt->bind_result($userId, $hashedPassword, $role);
@@ -46,6 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion - Échange de Monnaie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 400px;
+            margin-top: 100px;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">

@@ -7,12 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau de Bord Administrateur - Échange de Monnaie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section-header {
+            margin-top: 20px;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        /* Ensuring the form sections are styled distinctly */
+        .form-section {
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            border-color: gray;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Barre de navigation spécifique à l'administrateur -->
-    <?php include('navbar-admin.php');  ?>
+    <?php include('sidebar-admin.php');  ?>
 
-    <div class="container mt-5">
+    <div class="content" id="content">
         <h1>Tableau de Bord Administrateur</h1>
         <div class="row">
             <!-- Gestion des Transactions -->

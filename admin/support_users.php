@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <?php include('navbar-admin.php'); ?>
+    <?php include('sidebar-admin.php'); ?>
 
-    <div class="container mt-5">
+    <div class="content" id="content">
         <h1>Support Utilisateur</h1>
         <p>Intégration d'un ChatBot ou d'un système de messagerie pour aider les utilisateurs.</p>
         <!-- Code d'intégration du ChatBot ou d'un formulaire de support -->
