@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Utilisateur</title>
+    <title>IVOCHANGE</title>
     <!-- Bootstrap CSS -->
+    <link href="assets/Ivochange-removebg.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -12,6 +15,17 @@
         body {
             font-family: Arial, sans-serif;
             overflow-x: hidden; /* Éviter le défilement horizontal lors de la transition de la sidebar */
+        }
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .user-profile img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
         }
         .sidebar {
             height: 100vh;
@@ -89,12 +103,12 @@
 
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
-        <div class="text-center mb-4">
-            <a href="index.php"><img src="assets/Ivochange-removebg.png" alt="Logo" class="img-fluid" width="100" height="50"></a>
-        </div>
+
+        
+
         <a href="index.php"><i class="bi bi-speedometer2"></i>&nbsp; Tableau de Bord</a>
         <a href="transactions.php"><i class="bi bi-currency-exchange"></i>&nbsp; Transactions</a>
-        <a href="profile.php"><i class="bi bi-person-circle"></i>&nbsp; Profil</a>
+        <a href="./profil/profile.php"><i class="bi bi-person-circle"></i>&nbsp; Profil</a>
         <a href="settings.php"><i class="bi bi-gear"></i>&nbsp; Paramètres</a>
         <a href="user_messages.php"><i class="bi bi-chat-dots"></i>&nbsp; Support</a>
         <a href="https://web.whatsapp.com/send?phone=+2250789297259"><i class="bi bi-whatsapp"></i> &nbsp; Whatsapp</a>
